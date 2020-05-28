@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="527.0" prefWidth="700.0" style="-fx-background-color: #6e3d38;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libary.BorrowersController">
+   <children>
+      <VBox fx:id="vbox1" layoutX="254.0" layoutY="40.0" prefHeight="400.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox fx:id="hbox1" prefHeight="470.0" prefWidth="700.0">
+               <children>
+                  <TableView fx:id="tv" prefHeight="316.0" prefWidth="466.0" style="-fx-background-color: #a19f9f;">
+                     <columns>
+                        <TableColumn fx:id="tc1" prefWidth="47.0" text="ID" />
+                        <TableColumn fx:id="tc2" prefWidth="53.0" text="FN" />
+                        <TableColumn fx:id="tc3" prefWidth="76.0" text="LN" />
+                        <TableColumn fx:id="tc31" prefWidth="95.0" text="mobile" />
+                        <TableColumn fx:id="tc311" prefWidth="92.0" text="email" />
+                        <TableColumn fx:id="tc32" prefWidth="95.0" text="address" />
+                     </columns>
+                  </TableView>
+                  <VBox fx:id="vbox2" prefHeight="316.0" prefWidth="249.0">
+                     <children>
+                        <Label fx:id="labelID" alignment="CENTER" text="ID" textFill="#b9d047">
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfID" alignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label fx:id="labelName" alignment="CENTER" text="FN" textFill="#b9d047">
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tffn" alignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label fx:id="labelPass" alignment="CENTER" text="LN" textFill="#b9d047">
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfln" alignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label fx:id="labelPass1" alignment="CENTER" text="Mobile" textFill="#b9d047">
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfmobile" alignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label fx:id="labelName1" alignment="CENTER" text="Email" textFill="#b9d047">
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfemail" alignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label fx:id="labelID1" alignment="CENTER" text="Address" textFill="#b9d047">
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfaddress" alignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox fx:id="hbox2" alignment="CENTER" prefHeight="113.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="add" mnemonicParsing="false" onAction="#addHandle" prefHeight="25.0" prefWidth="123.0" text="Add" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets left="10.0" right="10.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="delete" mnemonicParsing="false" onAction="#delAction" prefHeight="25.0" prefWidth="129.0" text="Delete" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets left="10.0" right="10.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="update" mnemonicParsing="false" onAction="#upAction" prefHeight="25.0" prefWidth="129.0" text="Update" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets left="10.0" right="10.0" />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets left="10.0" right="10.0" />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

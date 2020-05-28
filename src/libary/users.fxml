@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cdeb94;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libary.UsersController">
+   <children>
+      <VBox fx:id="vbox1" layoutX="254.0" layoutY="40.0" prefHeight="400.0" prefWidth="607.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox fx:id="hbox1" prefHeight="345.0" prefWidth="600.0">
+               <children>
+                  <TableView fx:id="tv" prefHeight="316.0" prefWidth="363.0" style="-fx-background-color: #e4f0ce;">
+                     <columns>
+                        <TableColumn fx:id="tc1" prefWidth="66.0" text="ID" />
+                        <TableColumn fx:id="tc2" prefWidth="135.0" text="Name" />
+                        <TableColumn fx:id="tc3" prefWidth="161.0" text="Password" />
+                     </columns>
+                  </TableView>
+                  <VBox fx:id="vbox2" prefHeight="316.0" prefWidth="249.0">
+                     <children>
+                        <Label fx:id="labelID" alignment="CENTER" text="ID">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfID" alignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label fx:id="labelName" alignment="CENTER" text="Name">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfName" alignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label fx:id="labelPass" alignment="CENTER" text="Password">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfPass" alignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox fx:id="hbox2" alignment="CENTER" prefHeight="113.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="add" mnemonicParsing="false" onAction="#addHandle" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #8ce8ed;" text="Add" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets left="10.0" right="10.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="delete" mnemonicParsing="false" onAction="#delAction" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: #8ce8ed;" text="Delete" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets left="10.0" right="10.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="update" mnemonicParsing="false" onAction="#upAction" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: #8ce8ed;" text="Update" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets left="10.0" right="10.0" />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets left="10.0" right="10.0" />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
